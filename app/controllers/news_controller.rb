@@ -16,14 +16,16 @@ class NewsController < ApplicationController
 	end
 
 	def sync
-		HTTParty.post(@urlstring_to_post.to_str, 
-    :body => { :subject => 'This is the screen name', 
-               :issue_type => 'Application Problem', 
-               :status => 'Open', 
-               :priority => 'Normal', 
-               :description => 'This is the description for the problem'
-             }.to_json,
-    :headers => { 'Content-Type' => 'application/json' } )
+		yml_file = "config/data/#{params[:id]}.yml"
+		@new = YAML.load_file(yml_file).with_indifferent_access
+		
+		
+  	url = "http://10.2.0.69:8080/transaction/sendTransaction"
+  	body = {:senderPrivateKey=>"4b118339dd5134ba99bb08f0453cb22dc936f716b5be00f17b92a1eaad8f98a1", :receiverAddress=>"TCOIH2C7DKNDFP66USIYP2EJKLD2HE3IPT42W436", :amount=>0, :message=>"#{params[:content]}"} 
+  	result = HTTParty.post(url, body: body.to_json,headers:  { 'Content-Type' => 'application/json' })
+  	@new[:comments] <<  {id: (@new[:comments].count + 1), user_avatar: "/image/avatar/3.jpg", user_name: "周老师",created_at: "刚刚", position: "一级鉴定师", content: params[:content],like_count: 0, unlike_count: 0, hash: result.parsed_response}
+		File.open(yml_file, 'w') {|f| f.write @new.to_yaml }
+		redirect_to "/news/#{params[:id]}"
 	end	
 
 end

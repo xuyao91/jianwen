@@ -1,14 +1,53 @@
+--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
 content: "<img src='/image/news/115243332285.jpg'>EOS内存炒的很高，如何看待未来的走势？"
-sign: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
-hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
+sign: c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759
+hash: c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759
 comments:
-  -
-    id: 1
-    user_avatar: "/image/avatar/0.jpg"
-    user_name: "羔羊"
-    created_at: "刚刚"
-    position: "三级鉴定师"
-    content: "有需求，就有市场炒作。开发者必须用到的 EOS RAM，正在经历不合理的炒作。终究会回归到合理的价位。"
-    like_count: 300
-    unlike_count: 12
-    hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: 1
+  user_avatar: "/image/avatar/0.jpg"
+  user_name: 羔羊
+  created_at: 刚刚
+  position: 三级鉴定师
+  content: 有需求，就有市场炒作。开发者必须用到的 EOS RAM，正在经历不合理的炒作。终究会回归到合理的价位。
+  like_count: 300
+  unlike_count: 12
+  hash: c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: 1
+  user_avatar: "/image/avatar/3.jpg"
+  user_name: 周老师
+  created_at: 刚刚
+  position: 一级鉴定师
+  content: safsf
+  like_count: 0
+  unlike_count: 0
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: 3
+  user_avatar: "/image/avatar/3.jpg"
+  user_name: 周老师
+  created_at: 刚刚
+  position: 一级鉴定师
+  content: 我觉得可能是假的。
+  like_count: 0
+  unlike_count: 0
+  hash: f424cb8720f2d12682f282d33d39f48df23cafdaca7c67236e863567d1d59478
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  id: 4
+  user_avatar: "/image/avatar/3.jpg"
+  user_name: 周老师
+  created_at: 刚刚
+  position: 一级鉴定师
+  content: 我觉得这个事情 是真的。
+  like_count: 0
+  unlike_count: 0
+  hash: be7660f161ef911fc5e7637b5c4a714f225d2e13c8b00280b69fe920f13a2e89
+- :id: 5
+  :user_avatar: "/image/avatar/3.jpg"
+  :user_name: 周老师
+  :created_at: 刚刚
+  :position: 一级鉴定师
+  :content: 这个事情 肯定 是假的。
+  :like_count: 0
+  :unlike_count: 0
+  :hash: fea6975dbde456291410c93b2a5aa5380275d6933a3d0f60e17b1030a26c565d

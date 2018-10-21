@@ -72,7 +72,7 @@
     font-size: 15px;">
           <div>
             <p class="fly-home-sign">文章签名: <%= @new[:sign] %> </p>
-            <p class="fly-home-sign">NEM链Hash: <a style="color: #009688 !important;" href="http://bob.nem.ninja:8765/#/transfer/<%= @new[:hash] %>"><%= @new[:hash] %></a> </p>
+            <p class="fly-home-sign">NEM链Hash: <a style="color: #009688 !important;" href="http://bob.nem.ninja:8765/#/transfer/<%= @new[:hash] %>" target='_blank'><%= @new[:hash] %></a> </p>
           </div>
         </div>  
         <div class="detail-body photos">
@@ -82,7 +82,7 @@
 
       <div class="fly-panel detail-box" id="flyReply">
         <fieldset class="layui-elem-field layui-field-title" style="text-align: center;">
-          <legend>回帖</legend>
+          <legend>鉴定</legend>
         </fieldset>
 
         <ul class="jieda" id="jieda">
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="detail-hits">
-                  <span>NEM链Hash: <a style="color: #009688 !important;" href="http://bob.nem.ninja:8765/#/transfer/<%= comment[:hash] %>"><%= comment[:hash] %></a> </p></span>
+                  <span>NEM链Hash: <a style="color: #009688 !important;" href="http://bob.nem.ninja:8765/#/transfer/<%= comment[:hash] %>" target='_blank'><%= comment[:hash] %></a> </p></span>
                 </div>
 
                 <!-- <i class="iconfont icon-caina" title="最佳答案"></i> -->
@@ -134,18 +134,21 @@
         </ul>
         
         <div class="layui-form layui-form-pane">
-          <form action="/jie/reply/" method="post">
+          <%= form_tag '/news/sync', method: :post do  %>
+          <!-- <form action="/news/sync" method="post"> -->
             <div class="layui-form-item layui-form-text">
               <a name="comment"></a>
               <div class="layui-input-block">
                 <textarea id="L_content" name="content" required="" lay-verify="required" placeholder="请输入内容" class="layui-textarea fly-editor" style="height: 150px;"></textarea>
+                <%= hidden_field_tag 'id', params[:id] %>
               </div>
             </div>
             <div class="layui-form-item">
               <input type="hidden" name="jid" value="123">
-              <a class="layui-btn submit" lay-filter="*" lay-submit="">提交回复</a>
+              <button class="layui-btn submit" lay-filter="*" lay-submit="">我来鉴定</button>
             </div>
-          </form>
+          <!-- </form> -->
+          <% end %>
         </div>
       </div>
     </div>
@@ -165,7 +168,7 @@
           <% @users.each do |user| %>         
             <li>
               <a class="fly-firstT"><%= user[:id] %></a>
-              <a href="<%= user[:path] %>" class="fly-avatar">
+              <a href="/<%= user[:path] %>" class="fly-avatar">
                 <img src="<%= user[:avatar] %>" alt="<%= user[:name] %>">
               </a>
                 <cite><%= user[:name] %></cite>
