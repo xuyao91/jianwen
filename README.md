@@ -1,24 +1,13 @@
-# README
+# 鉴闻
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 一、选题背景
+- 新闻业遭受商业主义侵蚀，公信力下滑；
+- 新闻资讯太多，快速获取有用的信息难度越来越大；
+- 生活中谣言太多，真相离我们越来越远；
+- 有能力揭露真相的人，没有动力；
+- 传统的解决方案信息不能被追溯。
+### 二、意义
+- 让用户高效地获取真实有价值的信息，确保信息可追溯，可验证。
+同时，使新闻的客观性回归。
+- 采用通证经济设计，激励揭露真相和揭穿谣言的人，形成正向循环。
+同时，让越来越多的资源加入到社区中。
