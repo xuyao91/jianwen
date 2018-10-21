@@ -143,7 +143,7 @@
             </div>
             <div class="layui-form-item">
               <input type="hidden" name="jid" value="123">
-              <button class="layui-btn" lay-filter="*" lay-submit="">提交回复</button>
+              <a class="layui-btn submit" lay-filter="*" lay-submit="">提交回复</a>
             </div>
           </form>
         </div>
@@ -187,9 +187,16 @@
   </div>
 </div>
 <script type="text/javascript">
-	$(".jianding").on('click', function(){
-		$.get("/news/sync", function(data){
-			console.log(data);
-		})
-	})
+
+  $.ready(function($) {
+    console.log(22)
+    $(".submit").on('click', function(){
+      console.log(1111)
+      $.get("/news/sync", function(data){
+        console.log(data);
+    })
+  })
+
+  });
+	
 </script>

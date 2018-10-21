@@ -32,3 +32,4 @@ config/qiniu.yml
 config/secrets.yml
 # Ignore application configuration
 /config/application.yml
+log/*.log
