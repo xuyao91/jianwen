@@ -1,0 +1,14 @@
+content: "test"
+sign: ""
+hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
+comments:
+  -
+    id: 1
+    user_avatar: "public/images/1.png"
+    user_name: "羔羊"
+    created_at: "刚刚"
+    position: "三级鉴定师"
+    content: "safafasf"
+    like_count: 300
+    unlike_count: 12
+    hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"

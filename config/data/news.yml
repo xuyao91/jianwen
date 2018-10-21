@@ -1,0 +1,25 @@
+items:
+  -
+    id: 1
+    user_avatar: "/image/avatar/0.jpg"
+    user_name: "羔羊"
+    title: "test"
+    created_at: "刚刚"
+    is_hot: true
+    like_count: 60
+    comment_count: 66
+    link: /news/1
+    is_over: true
+    position: "三级鉴定师"
+  -
+    id: 2
+    user_avatar: "/image/avatar/0.jpg"
+    user_name: "羔羊"
+    title: "test"
+    created_at: "3分钟前"
+    is_hot: false
+    like_count: 60
+    comment_count: 66
+    link: /news/2
+    is_over: false
+    position: "一级鉴定师"

@@ -1,0 +1,10 @@
+<div>
+	<a class="jianding">鉴定</a>
+</div>
+<script type="text/javascript">
+	$(".jianding").on('click', function(){
+		$.get("/news/sync", function(data){
+			console.log(data);
+		})
+	})
+</script>

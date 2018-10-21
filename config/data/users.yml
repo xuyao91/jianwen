@@ -1,0 +1,15 @@
+items:
+  -
+    id: 1
+    avatar: "/image/avatar/0.jpg"
+    name: "羔羊"
+    position: "三级鉴定师"
+    counts: 200
+    path: "users/1"
+  -
+    id: 2
+    avatar: "/image/avatar/1.jpg"
+    name: "剑心"
+    position: "一级鉴定师"
+    counts: 356
+    path: "users/2"  
