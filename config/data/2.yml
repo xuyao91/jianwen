@@ -1,14 +1,14 @@
-content: "如何看待这次的USDT大波动，USDT还适合作为与法币对标的币种吗？"
-sign: ""
-hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
+content: "如何看待这次的USDT大波动，USDT还适合作为与法币对标的币种吗？<img src='/image/news/2.jpeg'>"
+sign: "e866895b955d42aabfbba3dc5888bd1d"
+hash: "135ba1dc874329a6f0353aec54e9f0277b2899201af1d6851bad2d8fc258b609"
 comments:
   -
     id: 1
-    user_avatar: "public/images/2.png"
+    user_avatar: "/image/avatar/2.jpg"
     user_name: "链使者"
     created_at: "2018-10-17"
     position: "一级鉴定师"
     content: "短期内USDT可能会波动，但是1个月之内回到与美元平价问题不大。据CoinMarketMap数据显示，USDT现全球均价为0.984417美元，24小时跌幅0.14％，还未与美元平价。"
     like_count: 2971
     unlike_count: 102
-    hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
+    hash: "135ba1dc874329a6f0353aec54e9f0277b2899201af1d6851bad2d8fc258b609"

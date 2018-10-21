@@ -1,14 +1,24 @@
-content: "<img src='/image/news/115243332285.jpg'>EOS内存炒的很高，如何看待未来的走势？"
-sign: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
-hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
+content: "<img src='/image/news/115243332285.jpg'>由于资源大小目前是固定的，所以内存价格还会继续上涨。"
+sign: "e866895b955d42aabfbba3dc5888bd1d"
+hash: "135ba1dc874329a6f0353aec54e9f0277b2899201af1d6851bad2d8fc258b609"
 comments:
   -
     id: 1
     user_avatar: "/image/avatar/0.jpg"
     user_name: "羔羊"
-    created_at: "刚刚"
-    position: "三级鉴定师"
+    created_at: "2018-06-07 11:05"
+    position: "一级鉴定师"
     content: "有需求，就有市场炒作。开发者必须用到的 EOS RAM，正在经历不合理的炒作。终究会回归到合理的价位。"
     like_count: 300
     unlike_count: 12
-    hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
+    hash: "135ba1dc874329a6f0353aec54e9f0277b2899201af1d6851bad2d8fc258b609"
+  -
+    id: 2
+    user_avatar: "/image/avatar/11.jpg"
+    user_name: "鹏飞"
+    created_at: "2018-06-06 23:15"
+    position: "一级鉴定师"
+    content: "现在还要看EOS官方的态度。"
+    like_count: 101
+    unlike_count: 30
+    hash: "135ba1dc874329a6f0353aec54e9f0277b2899201af1d6851bad2d8fc258b609"
