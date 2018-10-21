@@ -3,23 +3,259 @@ items:
     id: 1
     user_avatar: "/image/avatar/0.jpg"
     user_name: "羔羊"
-    title: "test"
-    created_at: "刚刚"
+    title: "EOS链的内存会继续涨价吗？"
+    created_at: "2018-06-06"
     is_hot: true
-    like_count: 60
-    comment_count: 66
+    like_count: 3260
+    comment_count: 520
     link: /news/1
     is_over: true
     position: "三级鉴定师"
+    views_count: 59823
   -
     id: 2
-    user_avatar: "/image/avatar/0.jpg"
-    user_name: "羔羊"
-    title: "test"
-    created_at: "3分钟前"
-    is_hot: false
-    like_count: 60
-    comment_count: 66
+    user_avatar: "/image/avatar/2.jpg"
+    user_name: "链使者"
+    title: "USDT最近还会出现大的波动吗？"
+    created_at: "2018-10-17"
+    is_hot: true
+    like_count: 2971
+    comment_count: 21
     link: /news/2
     is_over: false
     position: "一级鉴定师"
+    views_count: 29631
+  -
+    id: 3
+    user_avatar: "/image/avatar/4.jpg"
+    user_name: "胡帅"
+    title: "BTC链上活跃度下降"
+    created_at: "2小时前"
+    is_hot: false
+    like_count: 60
+    comment_count: 15
+    link: /news/3
+    is_over: false
+    position: "二级鉴定师"
+    views_count: 2823
+  -
+    id: 4
+    user_avatar: "/image/avatar/10.jpg"
+    user_name: "大松"
+    title: "京东将成立区块链联合实验室"
+    created_at: "3小时前"
+    is_hot: false
+    like_count: 160
+    comment_count: 66
+    link: /news/4
+    is_over: false
+    position: "一级鉴定师"
+    views_count: 7823
+  -
+    id: 5
+    user_avatar: "/image/avatar/5.jpg"
+    user_name: "风致"
+    title: "韩国将研发基于区块链技术的数字身份证，是真的吗？"
+    created_at: "10小时前"
+    is_hot: false
+    like_count: 98
+    comment_count: 12
+    link: /news/5
+    is_over: false
+    position: "三级鉴定师"
+    views_count: 21823
+  -
+    id: 6
+    user_avatar: "/image/avatar/7.jpg"
+    user_name: "堡垒"
+    title: "交易所安全吗？听说大部分都有安全漏洞？"
+    created_at: "10小时前"
+    is_hot: false
+    like_count: 170
+    comment_count: 26
+    link: /news/6
+    is_over: false
+    position: "三级鉴定师"
+    views_count: 29372
+  -
+    id: 7
+    user_avatar: "/image/avatar/2.jpg"
+    user_name: "链使者"
+    title: "从目前IPFS的进展来看，你对它的前景看好吗？"
+    created_at: "11小时前"
+    is_hot: false
+    like_count: 24
+    comment_count: 2
+    link: /news/7
+    is_over: false
+    position: "一级鉴定师"
+    views_count: 690
+  -
+    id: 8
+    user_avatar: "/image/avatar/9.jpg"
+    user_name: "雨欣"
+    title: "芯片增长放缓，是因为对采矿硬件的需求下降导致的吗？"
+    created_at: "昨天"
+    is_hot: false
+    like_count: 170
+    comment_count: 32
+    link: /news/8
+    is_over: true
+    position: "三级鉴定师"
+    views_count: 9823
+  -
+    id: 9
+    user_avatar: "/image/avatar/6.jpg"
+    user_name: "开车"
+    title: "TRIO短时放量大涨60%，是因为看衰短期增长吗？"
+    created_at: "昨天"
+    is_hot: false
+    like_count: 290
+    comment_count: 21
+    link: /news/9
+    is_over: false
+    position: "二级鉴定师"
+    views_count: 8823
+  -
+    id: 10
+    user_avatar: "/image/avatar/4.jpg"
+    user_name: "胡帅"
+    title: "Bitsum平台咨询及身份认证服务暂停使用，系统出现安全问题了吗？"
+    created_at: "昨天"
+    is_hot: false
+    like_count: 312
+    comment_count: 10
+    link: /news/2
+    is_over: true
+    position: "二级鉴定师"
+    views_count: 17092
+  -
+    id: 11
+    user_avatar: "/image/avatar/7.jpg"
+    user_name: "堡垒"
+    title: "交易所安全吗？听说大部分都有安全漏洞？"
+    created_at: "10小时前"
+    is_hot: false
+    like_count: 170
+    comment_count: 26
+    link: /news/6
+    is_over: false
+    position: "三级鉴定师"
+    views_count: 29372
+  -
+    id: 12
+    user_avatar: "/image/avatar/2.jpg"
+    user_name: "链使者"
+    title: "从目前IPFS的进展来看，你对它的前景看好吗？"
+    created_at: "11小时前"
+    is_hot: false
+    like_count: 24
+    comment_count: 2
+    link: /news/7
+    is_over: false
+    position: "一级鉴定师"
+    views_count: 690
+  -
+    id: 13
+    user_avatar: "/image/avatar/9.jpg"
+    user_name: "雨欣"
+    title: "芯片增长放缓，是因为对采矿硬件的需求下降导致的吗？"
+    created_at: "昨天"
+    is_hot: false
+    like_count: 170
+    comment_count: 32
+    link: /news/8
+    is_over: true
+    position: "三级鉴定师"
+    views_count: 9823
+  -
+    id: 14
+    user_avatar: "/image/avatar/6.jpg"
+    user_name: "开车"
+    title: "TRIO短时放量大涨60%，是因为看衰短期增长吗？"
+    created_at: "昨天"
+    is_hot: false
+    like_count: 290
+    comment_count: 21
+    link: /news/9
+    is_over: false
+    position: "二级鉴定师"
+    views_count: 8823
+  -
+    id: 15
+    user_avatar: "/image/avatar/4.jpg"
+    user_name: "胡帅"
+    title: "Bitsum平台咨询及身份认证服务暂停使用，系统出现安全问题了吗？"
+    created_at: "昨天"
+    is_hot: false
+    like_count: 312
+    comment_count: 10
+    link: /news/2
+    is_over: true
+    position: "二级鉴定师"
+    views_count: 17092
+  -
+    id: 16
+    user_avatar: "/image/avatar/11.jpg"
+    user_name: "鹏飞"
+    title: "BTC链上活跃度下降"
+    created_at: "2小时前"
+    is_hot: false
+    like_count: 60
+    comment_count: 15
+    link: /news/3
+    is_over: false
+    position: "二级鉴定师"
+    views_count: 2823
+  -
+    id: 17
+    user_avatar: "/image/avatar/10.jpg"
+    user_name: "大松"
+    title: "京东将成立区块链联合实验室"
+    created_at: "3小时前"
+    is_hot: false
+    like_count: 160
+    comment_count: 66
+    link: /news/4
+    is_over: false
+    position: "一级鉴定师"
+    views_count: 7823
+  -
+    id: 18
+    user_avatar: "/image/avatar/5.jpg"
+    user_name: "风致"
+    title: "韩国将研发基于区块链技术的数字身份证，是真的吗？"
+    created_at: "10小时前"
+    is_hot: false
+    like_count: 98
+    comment_count: 12
+    link: /news/5
+    is_over: false
+    position: "三级鉴定师"
+    views_count: 21823
+  -
+    id: 19
+    user_avatar: "/image/avatar/4.jpg"
+    user_name: "胡帅"
+    title: "Bitsum平台咨询及身份认证服务暂停使用，系统出现安全问题了吗？"
+    created_at: "昨天"
+    is_hot: false
+    like_count: 312
+    comment_count: 10
+    link: /news/2
+    is_over: true
+    position: "二级鉴定师"
+    views_count: 17092
+  -
+    id: 20
+    user_avatar: "/image/avatar/11.jpg"
+    user_name: "鹏飞"
+    title: "BTC链上活跃度下降"
+    created_at: "2小时前"
+    is_hot: false
+    like_count: 60
+    comment_count: 15
+    link: /news/3
+    is_over: false
+    position: "二级鉴定师"
+    views_count: 2823
