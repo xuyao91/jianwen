@@ -26035,3 +26035,58 @@ Processing by NewsController#show as HTML
 Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/news/1" for 127.0.0.1 at 2018-10-21 12:06:46 +0800
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/news/1" for 127.0.0.1 at 2018-10-21 12:08:02 +0800
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/news/1" for 127.0.0.1 at 2018-10-21 12:08:47 +0800
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 87ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jie/reply/" for 127.0.0.1 at 2018-10-21 12:09:01 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/jie/reply"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
