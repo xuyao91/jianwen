@@ -109,7 +109,7 @@
                 <!-- <i class="iconfont icon-caina" title="最佳答案"></i> -->
               </div>
               <div class="detail-body jieda-body photos">
-                <%= comment[:content] %>
+                <%= comment[:content].html_safe %>
               </div>
               <div class="jieda-reply">
                 <span class="fly-list-kiss layui-hide-xs " title="悬赏代币" onclick="likeUp(this)"><i class="layui-icon fontSize"></i> <span><%= comment[:like_count] %></span></span>
