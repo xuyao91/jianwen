@@ -1,10 +1,10 @@
 content: "test"
-sign: ""
+sign: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
 hash: "c5f9a68de958400504714838f9b699aef3387981a6d9f8d1cc840192447c8759"
 comments:
   -
     id: 1
-    user_avatar: "public/images/1.png"
+    user_avatar: "/image/avatar/0.jpg"
     user_name: "羔羊"
     created_at: "刚刚"
     position: "三级鉴定师"

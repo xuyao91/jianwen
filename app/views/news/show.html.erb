@@ -1,5 +1,190 @@
-<div>
-	<a class="jianding">鉴定</a>
+<div class="fly-panel fly-column">
+  <div class="layui-container">
+    <ul class="layui-clear">
+      <li class="layui-hide-xs layui-this"><a href="./index.html">热门</a></li> 
+      <li><a href="./index.html">关注<span class="layui-badge-dot"></span></a></li> 
+      <li><a href="./express.html">快讯</a></li> 
+      <li><a href="./joined.html">已参与</a></li> 
+      <li><a href="./finished.html">已结</a></li> 
+      <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li> 
+      
+      <!-- 用户登入后显示 -->
+      <!-- <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="user/index.html">我发表的贴</a></li> 
+      <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="user/index.html#collection">我收藏的贴</a></li>  -->
+    </ul> 
+    
+    <div class="fly-column-right layui-hide-xs"> 
+      <span class="fly-search"><i class="layui-icon"></i></span> 
+      <a href="/news/new" class="layui-btn">发表见闻</a> 
+    </div> 
+    <div class="layui-hide-sm layui-show-xs-block" style="margin-top: -10px; padding-bottom: 10px; text-align: center;"> 
+      <a href="./add.html" class="layui-btn">发表见闻</a> 
+    </div> 
+  </div>
+</div>
+<div class="layui-container">
+  <div class="layui-row layui-col-space15">
+    <div class="layui-col-md8 content detail">
+      <div class="fly-panel detail-box">
+        <h1><%= @pre_new[:title] %></h1>
+        <div class="fly-detail-info">
+          <!-- <span class="layui-badge">审核中</span> -->
+          <span class="layui-badge layui-bg-green fly-detail-column">动态</span>
+          
+          <span class="layui-badge" style="background-color: #999;">未结</span>
+          <!-- <span class="layui-badge" style="background-color: #5FB878;">已结</span> -->
+          
+          <span class="layui-badge layui-bg-black">置顶</span>
+          <span class="layui-badge layui-bg-red">精帖</span>
+          
+          <div class="fly-admin-box" data-id="123">
+            <span class="layui-btn layui-btn-xs jie-admin" type="del">删除</span>
+            
+            <span class="layui-btn layui-btn-xs jie-admin" type="set" field="stick" rank="1">置顶</span> 
+            <!-- <span class="layui-btn layui-btn-xs jie-admin" type="set" field="stick" rank="0" style="background-color:#ccc;">取消置顶</span> -->
+            
+            <span class="layui-btn layui-btn-xs jie-admin" type="set" field="status" rank="1">加精</span> 
+            <!-- <span class="layui-btn layui-btn-xs jie-admin" type="set" field="status" rank="0" style="background-color:#ccc;">取消加精</span> -->
+          </div>
+          <span class="fly-list-nums"> 
+            <a href="#comment"><i class="iconfont" title="回答"></i> <%= @pre_new[:comment_count] %></a>
+            <i class="iconfont" title="人气"></i> <%= @pre_new[:views_count] %>
+          </span>
+        </div>
+        <div class="detail-about">
+          <a class="fly-avatar" href="../user/home.html" style="left: 16px;">
+            <img src="<%= @pre_new[:user_avatar] %>" alt="<%= @pre_new[:user_name] %>">
+          </a>
+          <div class="fly-detail-user">
+            <a href="../user/home.html" class="fly-link">
+              <cite><%= @pre_new[:user_name] %></cite>
+              <i class="iconfont icon-renzheng" title="认证信息：{{ rows.user.approve }}"></i>
+              <i class="layui-badge fly-badge-vip"><%= @pre_new[:position] %></i>
+            </a>
+            <span><%= @pre_new[:created_at] %></span>
+          </div>
+          <div class="detail-hits" id="LAY_jieAdmin" data-id="123">
+            <span style="padding-right: 10px; color: #FF7200">悬赏：60代币</span>  
+            <span class="layui-btn layui-btn-xs jie-admin" type="edit"><a href="add.html">编辑此贴</a></span>
+          </div>
+        </div>
+        <div class="" style="background-color: #f8f8f8;padding: 5px;margin-top: 5px;
+    font-size: 15px;">
+          <div>
+            <p class="fly-home-sign">文章签名: <%= @new[:sign] %> </p>
+            <p class="fly-home-sign">NEM链Hash: <a style="color: #009688 !important;" href="http://bob.nem.ninja:8765/#/transfer/<%= @new[:hash] %>"><%= @new[:hash] %></a> </p>
+          </div>
+        </div>  
+        <div class="detail-body photos">
+          <%= @new[:content] %>
+        </div>
+      </div>
+
+      <div class="fly-panel detail-box" id="flyReply">
+        <fieldset class="layui-elem-field layui-field-title" style="text-align: center;">
+          <legend>回帖</legend>
+        </fieldset>
+
+        <ul class="jieda" id="jieda">
+          <% @new[:comments].each do |comment| %>
+            <li data-id="111" class="jieda-daan">
+              <a name="item-1111111111"></a>
+              <div class="detail-about detail-about-reply">
+                <a class="fly-avatar" href="">
+                  <img src="<%= comment[:user_avatar] %>" alt=" ">
+                </a>
+                <div class="fly-detail-user">
+                  <a href="" class="fly-link">
+                    <cite><%= comment[:user_name] %></cite>
+                    <i class="iconfont icon-renzheng" title="认证信息：XXX"></i>
+                    <i class="layui-badge fly-badge-vip">鉴定师</i>              
+                  </a>
+                  <span><%= comment[:created_at] %></span>
+                </div>
+
+                <div class="detail-hits">
+                  <span>NEM链Hash: <a style="color: #009688 !important;" href="http://bob.nem.ninja:8765/#/transfer/<%= comment[:hash] %>"><%= comment[:hash] %></a> </p></span>
+                </div>
+
+                <!-- <i class="iconfont icon-caina" title="最佳答案"></i> -->
+              </div>
+              <div class="detail-body jieda-body photos">
+                <%= comment[:content] %>
+              </div>
+              <div class="jieda-reply">
+                <span class="fly-list-kiss layui-hide-xs " title="悬赏代币" onclick="likeUp(this)"><i class="layui-icon fontSize"></i> <span><%= comment[:like_count] %></span></span>
+                <span class="fly-list-kiss layui-hide-xs " title="悬赏代币" onclick="likeUp(this)"><i class="layui-icon fontSize"></i> <span><%= comment[:unlike_count] %></span></span>
+                <span type="reply">
+                  <i class="iconfont icon-svgmoban53"></i>
+                  回复
+                </span>
+                <div class="jieda-admin">
+                  <span type="edit">编辑</span>
+                  <span type="del">删除</span>
+                  <!-- <span class="jieda-accept" type="accept">采纳</span> -->
+                </div>
+              </div>
+            </li>
+          <% end %>  
+          
+          
+          
+          <!-- 无数据时 -->
+          <!-- <li class="fly-none">消灭零回复</li> -->
+        </ul>
+        
+        <div class="layui-form layui-form-pane">
+          <form action="/jie/reply/" method="post">
+            <div class="layui-form-item layui-form-text">
+              <a name="comment"></a>
+              <div class="layui-input-block">
+                <textarea id="L_content" name="content" required="" lay-verify="required" placeholder="请输入内容" class="layui-textarea fly-editor" style="height: 150px;"></textarea>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <input type="hidden" name="jid" value="123">
+              <button class="layui-btn" lay-filter="*" lay-submit="">提交回复</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="layui-col-md4">
+        <dl class="fly-panel fly-list-one">
+        <dt class="fly-panel-title">本周热议</dt>
+        <% @news.each do |new| %>
+          <dd>
+            <a href="<%= new[:link] %>"><%= new[:title]%> </a>
+            <span><i class="iconfont icon-pinglun1"></i> <%= new[:comment_count] %></span>
+          </dd>
+        <% end %>
+      </dl>
+      <div class="fly-panel fly-rank fly-rank-reply" id="LAY_replyRank">
+        <h3 class="fly-panel-title">鉴定师排行榜</h3>
+        <ul class="fly-list"> 
+          <% @users.each do |user| %>         
+            <li>
+              <a class="fly-firstT"><%= user[:id] %></a>
+              <a href="<%= user[:path] %>" class="fly-avatar">
+                <img src="<%= user[:avatar] %>" alt="<%= user[:name] %>">
+              </a>
+                <cite><%= user[:name] %></cite>
+                <i class="iconfont icon-renzheng" title="认证信息：XXX"></i>
+                  <i class="layui-badge fly-badge-vip"><%= user[:position] %></i>
+              <div class="fly-list-info">
+                <span><%= user[:counts] %>次鉴定</span>
+              </div>
+
+            </li>
+          <% end %>  
+          
+        </ul>
+        
+      </div>
+
+
+    </div>
+  </div>
 </div>
 <script type="text/javascript">
 	$(".jianding").on('click', function(){

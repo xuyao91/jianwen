@@ -142,7 +142,7 @@ pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid 
 .fly-nav a i{position: absolute; left: 25px; top: 0; padding-right: 10px; font-size: 26px;}
 .fly-nav a .icon-shouye, .nav a .icon-shezhi{top: 2px;}
 
-.fly-nav-user{position: absolute; top: 0; right: 0;}
+.fly-nav-user{position: absolute !important; top: 0; right: 0;}
 .fly-nav-user .iconfont{position: relative;}
 .fly-nav-avatar img{width: 36px; height: 36px; margin-left: 10px; border-radius: 100%;}
 .fly-nav-avatar  .icon-renzheng{font-size: 16px; top: 1px;}
